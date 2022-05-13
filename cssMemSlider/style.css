@@ -1,3 +1,8 @@
+/* Desktop version  - width 1400px  */
+/* Mobile version  - width 1400px  */
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,8 +52,9 @@ table {
 
 .main-wrapper{ 
     max-width: 900px;
-    height: 90vh;
+    height: 60vh;
     margin: 15px auto;
+    padding: 0 20px;
     /* border: 3px solid green; */
 }
 header{ 
@@ -66,13 +72,13 @@ header > h1{
 
 /* main */
 main{ 
-    height: 72vh;
+    /* height: 72vh; */
 }
 .container{ 
     width: calc(80% - 20px);
     margin: 0 auto;
     padding: 2rem;
-    height: 100%;
+    /* height: 40vh; */
 
 }
 .slider{ 
@@ -128,7 +134,11 @@ main{
 .slide-item{
     width: 30%;
     transition: 1s;
+}
+.slide-item > p{ 
     font-size: 1.7rem;
+
+
 }
 .slider-btns{ 
     display: flex;
@@ -216,10 +226,6 @@ main{
 
 /* main */
 /* footer */
-footer{ 
-
-}
-
 .first-foot{ 
     
     display: flex;
@@ -273,3 +279,68 @@ footer{
     display: flex;
 }
 /* footer */
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    header{ 
+        font-size: 1.4rem;
+        height: 5vh;
+    }
+    .slide-item > p{ 
+        font-size: 1.3rem;
+    
+    }
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 690px) {
+    header{ 
+        font-size: 1.2rem;
+    }
+    .container{ 
+        padding: 0;
+        /* height: 40vh; */
+        border: 3px solid green;
+
+    }
+    .slide-item > p{ 
+        font-size: 1rem;
+    
+    }
+
+    .slider-btns{ 
+        max-width: 20%;
+    }
+
+    .sp-cir{ 
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .slide-item > p{ 
+        font-size: 0.7rem;
+    
+    }
+    .sp-cir{ 
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .rsschool{
+        width: 100px;
+    }
+    .foot-m > * { 
+        font-size: 0.9rem;
+    }
+}
