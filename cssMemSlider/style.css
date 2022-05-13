@@ -307,8 +307,9 @@ main{
     }
     .container{ 
         padding: 0;
-        /* height: 40vh; */
-        border: 3px solid green;
+        height: 40vh;
+        padding-bottom: 50px;
+        /* border: 3px solid green; */
 
     }
     .slide-item > p{ 
@@ -324,6 +325,9 @@ main{
         width: 0.8rem;
         height: 0.8rem;
     }
+    .slider-asset > img { 
+        width: 550px;
+    }
 
 }
 
@@ -337,6 +341,16 @@ main{
         width: 0.5rem;
         height: 0.5rem;
     }
+    .container{ 
+        height: 30vh;
+        padding-bottom: 70px;
+    }
+    .slider-asset > img { 
+        width: 450px;
+    }
+
+
+
     .rsschool{
         width: 100px;
     }
