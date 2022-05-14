@@ -1,0 +1,377 @@
+/* Desktop version  - width 1400px  */
+/* Mobile version  - width 424px  */
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #cd3333;
+    color:#bdae82;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.main-wrapper{ 
+    max-width: 56.25rem;
+    margin: 0.93rem auto;
+    padding: 0 1.25rem;
+}
+header{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color:#bdae82;
+
+}
+header > h1{ 
+    padding: 1rem
+}
+
+/* main */
+main{ 
+    /* height: 72vh; */
+}
+.container{ 
+    width: calc(80% - 20px);
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+.slider{ 
+    width: 100%;
+    max-width: 43em;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.slider-assets{
+    display: flex;
+    padding-bottom: 2em;
+}
+
+.slider-asset{ 
+    width: 100%;
+    transition: 1s;
+
+}
+.sl-1{
+    width: 43.75rem;
+    height: 100%;
+
+}
+.sl-2{
+    width: 43.75rem;
+    height: 100%;
+
+}
+.sl-3{ 
+    width: 43.75rem;
+    height: 100%;
+}
+.sl-4{ 
+    width: 43.75rem;
+    height: 100%;
+
+
+}
+.img-sl{
+    display: block;
+}
+.slider-desr{ 
+    width: 100%;
+    max-width: 80%;
+    overflow: hidden;
+}
+.descr-in{
+    width: 500%;
+    display: flex;
+}
+.slide-item{
+    width: 30%;
+    transition: 1s;
+}
+.slide-item > p{ 
+    font-size: 1.7rem;
+
+
+}
+.slider-btns{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 20%;
+}
+.for-mob{ 
+    display: flex;
+}
+
+.label-btn{ 
+    display: flex;
+    justify-content: center;
+    height: 1.8em;;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 100%;
+    align-items: center;
+}
+.sp-cir{ 
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: rgb(245, 167, 153);
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.label-btn:hover .sp-cir{
+    transition: 0.6s;
+    background-color: #cd3333;
+    border: 0.2em solid #fff;
+}
+.slide-move{ 
+    display: none;
+}
+
+
+
+#input1:checked ~ .for-mob .slider-btns .btn-1 .sp-cir, 
+#input2:checked ~ .for-mob .slider-btns .btn-2 .sp-cir, 
+#input3:checked ~ .for-mob .slider-btns .btn-3 .sp-cir, 
+#input4:checked ~ .for-mob .slider-btns .btn-4 .sp-cir{
+    background-color: #cd3333;
+    border: 0.2em solid #bdae82;
+}
+
+
+.label-btn:active .sp-cir, 
+#input1:active ~ .for-mob .slider-btns .label-btn:hover .sp-cir,
+#input2:active ~ .for-mob .slider-btns .label-btn:hover .sp-cir,
+#input3:active ~ .for-mob .slider-btns .label-btn:hover .sp-cir,
+#input4:active ~ .for-mob .slider-btns .label-btn:hover .sp-cir{ 
+    border-color: rgb(255, 153, 0);
+}
+
+
+#input1:checked ~ .slider-assets .slider-asset{ 
+    margin-left: 0em;
+}
+#input2:checked ~ .slider-assets .slider-asset{ 
+    margin-left: -25%;
+}
+#input3:checked ~ .slider-assets .slider-asset{ 
+    margin-left: -50%;
+}
+#input4:checked ~ .slider-assets .slider-asset{ 
+    margin-left: -75%;
+}
+
+#input1:checked ~ .for-mob .slider-desr .descr-in .item1{ 
+    margin-left: 0em;
+}
+#input2:checked ~ .for-mob .slider-desr .descr-in .item1{ 
+    margin-left: -30%;
+}
+#input3:checked ~ .for-mob .slider-desr .descr-in .item1{ 
+    margin-left: -60%;
+}
+#input4:checked ~ .for-mob .slider-desr .descr-in .item1{ 
+    margin-left: -90%;
+}
+
+
+
+
+
+/* main */
+/* footer */
+.first-foot{ 
+    display: flex;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo-foot{ 
+    font-size: 1rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;    
+    color:#bdae82;
+
+
+}
+.year-foot{ 
+    font-size: 16pt;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
+    color:#bdae82;
+
+}
+.git-hub{ 
+    font-size: 1rem;
+    text-decoration: none;
+    color:#bdae82;
+    padding-top: 1rem;
+
+}
+.git-hub:hover{ 
+    color: #fff;
+    transition: 1s;
+}
+.rsschool{ 
+    width: 8.75rem;
+    padding-top: 0.3rem;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+
+
+}
+
+.link-rs:hover{ 
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition:all ease 0.4s;
+
+}
+.foot-m{ 
+    display: flex;
+}
+/* footer */
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 950px) {
+    .slide-item > p{ 
+        font-size: 1.4rem;
+    
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header{ 
+        font-size: 1.4rem;
+        height: 5vh;
+    }
+    .slide-item > p{ 
+        font-size: 1.3rem;
+    
+    }
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 690px) {
+    header{ 
+        font-size: 1.2rem;
+        padding-bottom: 3rem;
+    }
+    main { 
+        padding-bottom: 3.75rem;
+
+    }
+    footer{ 
+        padding: 5rem;
+    }
+    .container{ 
+        padding: 0;
+        height: 40vh;
+        padding-bottom: 3.75rem;
+        /* border: 3px solid green; */
+
+    }
+    .slide-item > p{ 
+        padding-bottom: 1rem;
+
+        font-size: 1rem;
+    
+    }
+    .for-mob{ 
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider-btns{ 
+        max-width: 7rem;
+    }
+
+    /* .sp-cir{ 
+        width: 0.8rem;
+        height: 0.8rem;
+    } */
+    .slider-asset > img { 
+        width: 34.375rem
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .slide-item > p{ 
+        font-size: 0.65rem;
+    
+    }
+
+    .container{ 
+        height: 30vh;
+        padding-bottom: 4rem;
+    }
+    .slider-asset > img { 
+        width: 28.125rem;
+    }
+
+
+
+    .rsschool{
+        width: 6.25rem;
+    }
+    .foot-m > * { 
+        font-size: 0.9rem;
+    }
+    footer{ 
+        padding: 3rem;
+    }
+}
