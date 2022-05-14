@@ -1,5 +1,5 @@
 /* Desktop version  - width 1400px  */
-/* Mobile version  - width 1400px  */
+/* Mobile version  - width 424px  */
 
 
 
@@ -51,11 +51,9 @@ table {
 }
 
 .main-wrapper{ 
-    max-width: 900px;
-    height: 60vh;
-    margin: 15px auto;
-    padding: 0 20px;
-    /* border: 3px solid green; */
+    max-width: 56.25rem;
+    margin: 0.93rem auto;
+    padding: 0 1.25rem;
 }
 header{ 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -65,7 +63,7 @@ header{
 
 }
 header > h1{ 
-    padding: 20px;
+    padding: 1rem
 }
 
 /* main */
@@ -97,21 +95,21 @@ main{
 
 }
 .sl-1{
-    width: 700px;
+    width: 43.75rem;
     height: 100%;
 
 }
 .sl-2{
-    width: 700px;
+    width: 43.75rem;
     height: 100%;
 
 }
 .sl-3{ 
-    width: 700px;
+    width: 43.75rem;
     height: 100%;
 }
 .sl-4{ 
-    width: 700px;
+    width: 43.75rem;
     height: 100%;
 
 
@@ -169,7 +167,7 @@ main{
 .label-btn:hover .sp-cir{
     transition: 0.6s;
     background-color: #cd3333;
-    border: 2px solid #fff;
+    border: 0.2em solid #fff;
 }
 .slide-move{ 
     display: none;
@@ -182,7 +180,7 @@ main{
 #input3:checked ~ .for-mob .slider-btns .btn-3 .sp-cir, 
 #input4:checked ~ .for-mob .slider-btns .btn-4 .sp-cir{
     background-color: #cd3333;
-    border: 3px solid #bdae82;
+    border: 0.2em solid #bdae82;
 }
 
 
@@ -234,25 +232,25 @@ main{
     justify-content: space-between;
 }
 .logo-foot{ 
-    font-size: 16pt;
-    padding-right: 20px;
-    padding-top: 15px;    
+    font-size: 1rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;    
     color:#bdae82;
 
 
 }
 .year-foot{ 
     font-size: 16pt;
-    padding-right: 20px;
-    padding-top: 15px;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
     color:#bdae82;
 
 }
 .git-hub{ 
-    font-size: 16pt;
+    font-size: 1rem;
     text-decoration: none;
     color:#bdae82;
-    padding-top: 15px;
+    padding-top: 1rem;
 
 }
 .git-hub:hover{ 
@@ -260,8 +258,8 @@ main{
     transition: 1s;
 }
 .rsschool{ 
-    width: 140px;
-    padding-top: 4px;
+    width: 8.75rem;
+    padding-top: 0.3rem;
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
 
@@ -283,6 +281,13 @@ main{
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 950px) {
+    .slide-item > p{ 
+        font-size: 1.4rem;
+    
+    }
+}
+
 @media screen and (max-width: 800px) {
     header{ 
         font-size: 1.4rem;
@@ -303,19 +308,25 @@ main{
 @media screen and (max-width: 690px) {
     header{ 
         font-size: 1.2rem;
+        padding-bottom: 3rem;
     }
     main { 
-        padding-bottom: 60px;
+        padding-bottom: 3.75rem;
 
+    }
+    footer{ 
+        padding: 5rem;
     }
     .container{ 
         padding: 0;
         height: 40vh;
-        padding-bottom: 50px;
+        padding-bottom: 3.75rem;
         /* border: 3px solid green; */
 
     }
     .slide-item > p{ 
+        padding-bottom: 1rem;
+
         font-size: 1rem;
     
     }
@@ -324,15 +335,15 @@ main{
         align-items: center;
     }
     .slider-btns{ 
-        max-width: 20%;
+        max-width: 7rem;
     }
 
-    .sp-cir{ 
+    /* .sp-cir{ 
         width: 0.8rem;
         height: 0.8rem;
-    }
+    } */
     .slider-asset > img { 
-        width: 550px;
+        width: 34.375rem
     }
 
 }
@@ -340,27 +351,27 @@ main{
 
 @media screen and (max-width: 550px) {
     .slide-item > p{ 
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     
     }
-    .sp-cir{ 
-        width: 0.5rem;
-        height: 0.5rem;
-    }
+
     .container{ 
         height: 30vh;
-        padding-bottom: 70px;
+        padding-bottom: 4rem;
     }
     .slider-asset > img { 
-        width: 450px;
+        width: 28.125rem;
     }
 
 
 
     .rsschool{
-        width: 100px;
+        width: 6.25rem;
     }
     .foot-m > * { 
         font-size: 0.9rem;
+    }
+    footer{ 
+        padding: 3rem;
     }
 }
